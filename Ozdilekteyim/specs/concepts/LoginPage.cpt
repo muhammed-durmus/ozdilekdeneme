@@ -1,0 +1,17 @@
+Created by testinium on 31.01.2022
+
+This is a concept file with following syntax for each concept.
+# Giriş yapma sayfasının açıldığı kontrol edilir
+* id "com.ozdilek.ozdilekteyim:id/btnLogin" li element görünür durumda
+
+# Kullanıcı adı bilgisi girilir
+* id "com.ozdilek.ozdilekteyim:id/etEposta" li ementi bul ve "m.drms1905@gmail.com" değerini yaz
+* "2" saniye kadar bekle
+
+# Password alanına şifre yazılır
+* id "com.ozdilek.ozdilekteyim:id/etPassword" li ementi bul ve "1q2w3e4r" değerini yaz
+* "2" saniye kadar bekle
+
+# Giriş yap butonuna tıklanır
+* id "com.ozdilek.ozdilekteyim:id/btnLogin" li elemente tıkla
+* "4" saniye kadar bekle

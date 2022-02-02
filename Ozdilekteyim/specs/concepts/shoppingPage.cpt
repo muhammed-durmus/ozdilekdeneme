@@ -1,0 +1,53 @@
+Created by testinium on 31.01.2022
+# “Özdilekteyim” uygulaması açılır
+* "4" saniye kadar bekle
+* Sayfayı sola kaydır
+
+# Anasayfada <text> alanının texti kontrol edilir
+* id "//*[@resource-id='com.ozdilek.ozdilekteyim:id/relLayStore']/android.widget.TextView" li elementi bul ve <text> alanını kontrol et
+
+# Alışveriş sayfasının açıldığı doğrulanır
+* xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/relLayStore']/android.widget.TextView" li elementi bul ve "Mağaza" alanını kontrol et
+
+# Kategoriler sayfası açılır
+* id "com.ozdilek.ozdilekteyim:id/nav_categories" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Kategoriler sayfasının açıldığı doğrulanır
+* xpath "//android.widget.LinearLayout[@content-desc='Kategoriler']/android.widget.TextView" li elementi bul ve "Kategoriler" alanını kontrol et
+* "2" saniye kadar bekle
+
+# Menüden Kadın seçeneğine tıklanır
+* xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/recyclerCategories']/android.widget.RelativeLayout[2]" li elemente tıkla
+*"2" saniye kadar bekle
+
+# Pantolon kategorisi seçilir
+* xpath "//*[@resource-id='com.ozdilek.ozdilekteyim:id/recyclerCategories']/android.widget.RelativeLayout[14]" li elemente tıkla
+* "2" saniye kadar bekle
+
+# Ürünlerden rasgele bir ürün seçilir
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/recyclerView']/android.widget.FrameLayout" arasından rasgele bir tanesini seç ve tıkla
+* "2" saniye kadar bekle
+
+# Ürün detay sayfası açıldığı kontrol edilir
+* id "com.ozdilek.ozdilekteyim:id/cardAddToCart" li element görünür durumda
+
+# Favorilerime ekle butonuna tıklanır
+* id "com.ozdilek.ozdilekteyim:id/imgAddFav" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Geri butonuna 2 kere tıklanır
+* id "com.ozdilek.ozdilekteyim:id/ivBack" li elemente tıkla
+* id "com.ozdilek.ozdilekteyim:id/ivBack" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Seçilen ürün sepete eklenir
+* Elementler "//*[@resource-id='com.ozdilek.ozdilekteyim:id/tvInSizeItem']" arasından rasgele bir tanesini seç ve tıkla
+* id "com.ozdilek.ozdilekteyim:id/cardAddToCart" li elemente tıkla
+* "3" saniye kadar bekle
+
+# Sayfanın en aşağı kısmına doğru iki kere scrol edilir
+* Sayfayı aşağı kaydır
+* "1" saniye kadar bekle
+* Sayfayı aşağı kaydır
+* "1" saniye kadar bekle
